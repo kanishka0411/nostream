@@ -73,6 +73,7 @@ Running `nostream` for the first time creates the settings file in `<project_roo
 | info.contact                                | Relay operator's contact. (e.g. mailto:operator@relay-your-domain.com) |
 | network.maxPayloadSize                      | Maximum number of bytes accepted per WebSocket frame |
 | network.remoteIpHeader                      | HTTP header from proxy containing IP address from client. |
+| network.trustedProxies                      | Optional allow-list of proxy IPs allowed to set `network.remoteIpHeader`; otherwise socket remote IP is used. |
 | payments.enabled                            | Enabled payments. Defaults to false. |
 | payments.processor                          | Either `zebedee`, `lnbits`, `lnurl`. |
 | payments.feeSchedules.admission[].enabled   | Enables admission fee. Defaults to false. |
